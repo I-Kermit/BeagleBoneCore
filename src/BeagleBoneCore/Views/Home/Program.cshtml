@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Dmx";
+}
+
+<h2>DMX</h2>
+
+<div class="StudioDueTable">
+    <div class="Title">
+        <p class="ui-state-default ui-corner-all">
+            <span class="ui-icon ui-icon-lightbulb" style="float:left;margin:-2px 5px 0 0;"></span>
+            Studio Due nanoLed
+        </p>
+    </div>
+
+    <div class="Heading">
+        <div class="Cell"><p><label id="ch1_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch2_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch3_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch4_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch5_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch6_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch7_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch8_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch9_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch10_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch11_val">0</label></p></div>
+        <div class="Cell"><p><label id="ch12_val">0</label></p></div>
+    </div>
+
+    <div class="SliderRow">
+        <div class="Cell"><p><span id="ch1"></span></p></div>
+        <div class="Cell"><p><span id="ch2"></span></p></div>
+        <div class="Cell"><p><span id="ch3"></span></p></div>
+        <div class="Cell"><p><span id="ch4"></span></p></div>
+        <div class="Cell"><p><span id="ch5"></span></p></div>
+        <div class="Cell"><p><span id="ch6"></span></p></div>
+        <div class="Cell"><p><span id="ch7"></span></p></div>
+        <div class="Cell"><p><span id="ch8"></span></p></div>
+        <div class="Cell"><p><span id="ch9"></span></p></div>
+        <div class="Cell"><p><span id="ch10"></span></p></div>
+        <div class="Cell"><p><span id="ch11"></span></p></div>
+        <div class="Cell"><p><span id="ch12"></span></p></div>
+    </div>
+
+    <div class="Row">
+        <div class="Cell"><p>Red</p></div>
+        <div class="Cell"><p>Green</p></div>
+        <div class="Cell"><p>Blue</p></div>
+        <div class="Cell"><p>Strobe</p></div>
+        <div class="Cell"><p>Pan<br>Coarse</p></div>
+        <div class="Cell"><p>Pan<br>Fine</p></div>
+        <div class="Cell"><p>Tilt<br>Coarse</p></div>
+        <div class="Cell"><p>Tilt<br>Fine</p></div>
+        <div class="Cell"><p>Dimmer</p></div>
+        <div class="Cell"><p>Motor<br>Speed</p></div>
+        <div class="Cell"><p>Led<br>Fade<br>Time</p></div>
+        <div class="Cell"><p>Reset</p></div>
+    </div>
+</div>
+
+<br>
+
+<div class="table">
+    <div class="ui-button ui-widget ui-corner-all" id="btnSend">Send</div>
+    <div class="ui-button ui-widget ui-corner-all" id="btnReset">Reset</div>
+    <label id="lastString"></label>
+</div>
+
+<label>IP Address:</label><label id="ipaddress">@ViewBag.IpAddress</label>:<label id="port">@ViewBag.Port</label>
+<label id="DmxValues"></label>
